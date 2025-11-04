@@ -48,10 +48,11 @@ import {
     CheckCircle,
     InsertDriveFile,
 } from '@mui/icons-material';
-import { calcularTotalesPorArea, formatDateForBitrix, isValidDate, processExcelFile } from '../../utils/excelUtils';
+
 
 import axios from 'axios';
-import { MainContext } from '../../context/MainContextApp';
+import { processExcelFile } from '../utils/excelUtils';
+import { MainContext } from '../contexts/MainContext';
 
 export const BitrixIntegration = () => {
     const [files, setFiles] = useState([]);
